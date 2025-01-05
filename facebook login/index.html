@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main-div">
+      <h1 id="logo">Facebook</h1>
+      <form class="signup-form">
+        <div class="form-heading">
+          <h2>Create a New Account</h2>
+          <p>It's quick and easy.</p>
+        </div>
+        <div class="input-fields">
+          <div class="half">
+            <input
+              type="text"
+              name="first_name"
+              placeholder="First Name"
+              required
+            />
+          </div>
+          <div class="half">
+            <input
+              type="text"
+              name="last_name"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+          <div class="full">
+            <input
+              type="email"
+              name="email"
+              placeholder="Mobile Number or Email"
+              required
+            />
+          </div>
+          <div class="full">
+            <input
+              type="password"
+              name="password"
+              placeholder="New Password"
+              required
+            />
+          </div>
+        </div>
+        <label for="birthday">Birthday</label>
+        <div class="dob-div">
+          <div class="quat-width">
+            <select name="birth_day" required>
+              <option value="">Day</option>
+              <option value="1">1</option>
+              
+            </select>
+          </div>
+          <div class="quat-width">
+            <select name="birth_month" required>
+              <option value="">Month</option>
+              <option value="January">January</option>
+              
+            </select>
+          </div>
+          <div class="quat-width">
+            <select name="birth_year" required>
+              <option value="">Year</option>
+              <option value="1990">1990</option>
+              
+            </select>
+          </div>
+        </div>
+        <label>Gender</label>
+        <div class="dob-div">
+          <div class="radio-button">
+            <input
+              type="radio"
+              name="gender"
+              value="female"
+              id="female"
+              required
+            />
+            <label for="female">Female</label>
+          </div>
+          <div class="radio-button">
+            <input type="radio" name="gender" value="male" id="male" required />
+            <label for="male">Male</label>
+          </div>
+          <div class="radio-button">
+            <input
+              type="radio"
+              name="gender"
+              value="other"
+              id="other"
+              required
+            />
+            <label for="other">Other</label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
